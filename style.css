@@ -1,0 +1,69 @@
+/* Temel sıfırlama - Tüm elementlerin varsayılan margin ve padding değerleri sıfırlanır. 
+   box-sizing: border-box; ile elementlerin toplam genişliği ve yüksekliği, 
+   padding ve border'ı da kapsayacak şekilde ayarlanır. */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body etiketi için genel stil tanımlamaları */
+body {
+    font-family: Arial, sans-serif;  /* Yazı tipi Arial veya desteklenmezse sans-serif */
+    background-color: #f4f4f4;      /* Sayfanın arka plan rengi açık gri */
+    color: #333;                    /* Metin rengi koyu gri */
+    
+}
+
+/* header ve footer bölümleri için ortak stil */
+header, footer {
+    text-align: center;  /* Metinleri ortalar */
+    padding: 20px;       /* Üst ve alt kısımlarda boşluk bırakır */
+    color: white;        /* Metin rengi beyaz yapılır */
+}
+
+/* header bölümü için özel arka plan rengi */
+header {
+    background-color: #35424a;  /* Koyu gri-mavi tonlarında arka plan */
+}
+
+/* footer bölümü için özel arka plan rengi ve boşluk */
+footer {
+    background-color: #2C3D50;  /* Daha koyu bir mavi-gri arka plan */
+    margin-top: 20px;           /* Üstten 20px boşluk bırakılır */
+}
+
+/* Navigasyon menüsü için stil */
+nav {
+    background-color: #3291D2;  /* Menünün arka plan rengi mavi */
+    padding: 10px;              /* İçerideki elemanlar için boşluk bırakır */
+    text-align: center;         /* Menü öğelerini ortalar */
+}
+
+
+
+/* Menü içindeki <li> (list item) öğeleri için stil */
+nav li {
+    display: inline;   /* Liste öğeleri yatay o+larak yan yana dizilir */
+    margin: 0 10px;    /* Sağ ve sol taraflara 10px boşluk eklenir */
+}
+
+/* Menü bağlantılarına (linklere) stil ekler */
+nav a {
+    color: white;           /* Bağlantı metni beyaz yapılır */
+}
+
+/* Ana kapsayıcı alan için stil */
+.container {
+    
+    width: 90%;             /* Kapsayıcı alanın genişliği sayfanın %80'i olur */
+    margin: 20px auto;      /* Üstten ve alttan 20px boşluk, ortalama için sağ-sol auto */
+}
+
+/* İçerik kutuları için stil */
+.kutu {
+    background: #E1E5E7;    /* Arka plan rengi açık gri-mavi tonlarında */
+    padding: 20px;          /* İçerideki metin ve kenar arasında boşluk bırakır */
+    margin-bottom: 20px;    /* Her kutunun altına 20px boşluk ekler */
+    border-radius: 5px;     /* Kenarlara 5px'lik yumuşatma (köşe yuvarlatma) ekler */
+}
